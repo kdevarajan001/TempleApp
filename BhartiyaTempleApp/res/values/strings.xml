@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">BhartiyaTempleApp</string>
+    <string name="app_name">The BharatiyaTemple </string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="strDispName">Please enter your display name:</string>
+    <string name="strEditDispName">Your preferred display name</string>
+    <string name="btnSave">Save</string>
     <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="strSplashScreenDesc"></string>
+    <string name="title_activity_display_name">Display Name</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>

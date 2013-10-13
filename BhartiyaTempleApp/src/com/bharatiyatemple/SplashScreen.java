@@ -1,14 +1,13 @@
-package com.bhartiyaTemple.bhartiyatempleapp;
+package com.bharatiyatemple;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.Menu;
 
 public class SplashScreen extends Activity {
 
-	private static final int SPLASH_DISPLAY_TIME = 4000; // splash screen delay
+	private static final int SPLASH_DISPLAY_TIME = 3000; // splash screen delay
 															// time
 
 	@Override
@@ -20,7 +19,7 @@ public class SplashScreen extends Activity {
 		 public void run() {
 		 try {
 		 int waited = 0;
-		 while (waited < 3000) {
+		 while (waited < SPLASH_DISPLAY_TIME) {
 		 sleep(20);
 		 waited += 40;
 		 }
@@ -29,8 +28,8 @@ public class SplashScreen extends Activity {
 		 } finally {
 		 finish();
 		 Intent i = new Intent();
-		 i.setClassName("com.bhartiyaTemple.bhartiyatempleapp",
-		 "com.bhartiyaTemple.bhartiyatempleapp.MainActivity");
+		 i.setClassName("com.bharatiyatemple",
+		 "com.bharatiyatemple.MainActivity");
 		 startActivity(i);
 		 }
 		 }

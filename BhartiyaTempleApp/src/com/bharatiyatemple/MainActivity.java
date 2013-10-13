@@ -1,11 +1,15 @@
-package com.bhartiyaTemple.bhartiyatempleapp;
+package com.bharatiyatemple;
 
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
+import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends Activity {
+
+	public final static String EXTRA_MESSAGE = "com.bharatiyatemple.message";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -13,7 +17,16 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         
     }
-
+    
+    /** Called when user clicks on the Save button */
+    public void saveDispName(View view){
+    	Intent intentDispName = new Intent(this, DisplayNameActivity.class);
+    	EditText txtDispName = (EditText)findViewById(R.id.txtDispName);
+    	String strDispName = txtDispName.getText().toString();
+    	intentDispName.putExtra(EXTRA_MESSAGE, strDispName);
+    	startActivity(intentDispName);
+    }
+    
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
