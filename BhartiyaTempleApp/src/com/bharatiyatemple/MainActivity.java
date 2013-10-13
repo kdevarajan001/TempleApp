@@ -7,9 +7,13 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
 
+/**
+ * The main activity class is the first class to be launched when
+ * the application is started for the first time. */
+
 public class MainActivity extends Activity {
 
-	public final static String EXTRA_MESSAGE = "com.bharatiyatemple.message";
+	public final static String EXTRA_MESSAGE = "com.bharatiyatemple.strDispName";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

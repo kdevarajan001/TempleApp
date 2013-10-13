@@ -7,51 +7,33 @@ import android.view.Menu;
 
 public class SplashScreen extends Activity {
 
-	private static final int SPLASH_DISPLAY_TIME = 3000; // splash screen delay
-															// time
+	private static final int SPLASH_DISPLAY_TIME = 3000;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_splash_screen);
-		 Thread splashThread = new Thread() {
-		 @Override
-		 public void run() {
-		 try {
-		 int waited = 0;
-		 while (waited < SPLASH_DISPLAY_TIME) {
-		 sleep(20);
-		 waited += 40;
-		 }
-		 } catch (InterruptedException e) {
-		 // do nothing
-		 } finally {
-		 finish();
-		 Intent i = new Intent();
-		 i.setClassName("com.bharatiyatemple",
-		 "com.bharatiyatemple.MainActivity");
-		 startActivity(i);
-		 }
-		 }
-		 };
-		 splashThread.start();
-		
-
-//		new Handler().postDelayed(new Runnable() {
-//			public void run() {
-//
-//				Intent intent = new Intent();
-//				intent.setClass(SplashScreen.this, MainActivity.class);
-//
-//				SplashScreen.this.startActivity(intent);
-//				SplashScreen.this.finish();
-//
-//				// transition from splash to main menu
-//				overridePendingTransition(R.animate.activityfadein,
-//						R.animate.splashfadeout);
-//
-//			}
-//		}, SPLASH_DISPLAY_TIME);
+		Thread splashThread = new Thread() {
+			@Override
+			public void run() {
+				try {
+					int waited = 0;
+					while (waited < SPLASH_DISPLAY_TIME) {
+						sleep(20);
+						waited += 40;
+					}
+				} catch (InterruptedException e) {
+					// do nothing
+				} finally {
+					finish();
+					Intent i = new Intent();
+					i.setClassName("com.bharatiyatemple",
+							"com.bharatiyatemple.MainActivity");
+					startActivity(i);
+				}
+			}
+		};
+		splashThread.start();
 	}
 
 	@Override
