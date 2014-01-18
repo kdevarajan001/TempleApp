@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2.00" >
+
+        <Button
+            android:id="@+id/add_event"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="Add Event" />
+
+        <Button
+            android:id="@+id/add_user_details"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/display_event"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="92dp"
+            android:text="Add User Details" />
+
+        <Button
+            android:id="@+id/display_event"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_event"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="71dp"
+            android:text="Display Event" />
+
+    </RelativeLayout>

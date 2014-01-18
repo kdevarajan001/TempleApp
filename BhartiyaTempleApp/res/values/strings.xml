@@ -10,5 +10,7 @@
     <string name="strSplashScreenDesc"></string>
     <string name="title_activity_display_name">Display Name</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_update_database">UpdateDatabaseActivity</string>
+    <string name="title_activity_update_database_delegate">UpdateDatabaseDelegateActivity</string>
 
 </resources>

@@ -35,6 +35,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.bharatiyatemple.MainActivity" />
         </activity>
+        <activity
+            android:name="com.bharatiyatemple.UpdateDatabaseMainActivity"
+            android:label="@string/title_activity_update_database" >
+        </activity>
+        <activity
+            android:name="com.bharatiyatemple.UpdateDatabaseDelegateActivity"
+            android:label="@string/title_activity_update_database_delegate" >
+        </activity>
     </application>
 
 </manifest>
