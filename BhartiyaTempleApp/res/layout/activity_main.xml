@@ -3,25 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
-    
-    <TextView
-        android:id="@+id/tvDispName"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/strDispName" />
-    
-    <EditText android:id="@+id/txtDispName"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tvDispName"
-        android:hint="@string/strEditDispName" />
-	    
-	<Button
-	    android:id="@+id/btnSaveID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtDispName"
-        android:text="@string/btnSave" 
-        android:onClick="saveDispName"/>
+
 </RelativeLayout>
 

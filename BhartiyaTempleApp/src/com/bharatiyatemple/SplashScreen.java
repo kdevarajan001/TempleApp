@@ -28,7 +28,7 @@ public class SplashScreen extends Activity {
 					finish();
 					Intent i = new Intent();
 					i.setClassName("com.bharatiyatemple",
-							"com.bharatiyatemple.MainActivity");
+							"com.bharatiyatemple.DisplayNameActivity");
 					startActivity(i);
 				}
 			}

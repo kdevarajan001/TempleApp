@@ -7,11 +7,8 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 
-import com.bharatiyatemple.database.MySQLiteEventsHelper;
-
 public class UpdateDatabaseMainActivity extends Activity {
 
-	private MySQLiteEventsHelper mySQLiteEventsHelper;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +22,11 @@ public class UpdateDatabaseMainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				mySQLiteEventsHelper.getWritableDatabase();
-
 				Intent addData = new Intent(
 						UpdateDatabaseMainActivity.this,
 						UpdateDatabaseDelegateActivity.class);
+				
+				startActivity(addData);
 				
 			}
 		});

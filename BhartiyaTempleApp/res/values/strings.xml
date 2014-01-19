@@ -3,13 +3,16 @@
 
     <string name="app_name">The Bharatiya Temple </string>
     <string name="action_settings">Settings</string>
-    <string name="strDispName">Please enter your display name:</string>
-    <string name="strEditDispName">Your preferred display name</string>
-    <string name="btnSave">Save</string>
-    <string name="title_activity_splash_screen">BharatiyaTemple</string>
+    <string name="strDevout">Created by Devout Group</string>
+    <string name="title_activity_splash_screen">The Bharatiya Temple of Metropolitian Detroit</string>
     <string name="strSplashScreenDesc"></string>
     <string name="title_activity_display_name">Display Name</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="descHome">Home</string>
+    <string name="descEvents">Events</string>
+    <string name="descMember">Member</string>
+    <string name="descRegister">Archana</string>
+    <string name="descDonate">Donate</string>
+    <string name="strUpcomingEvents">Upcoming Events</string>
     <string name="title_activity_update_database">UpdateDatabaseActivity</string>
     <string name="title_activity_update_database_delegate">UpdateDatabaseDelegateActivity</string>
 

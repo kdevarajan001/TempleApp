@@ -18,18 +18,19 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        
+        //setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_display_name);
     }
     
     /** Called when user clicks on the Save button */
-    public void saveDispName(View view){
-    	Intent intentDispName = new Intent(this, DisplayNameActivity.class);
-    	EditText txtDispName = (EditText)findViewById(R.id.txtDispName);
-    	String strDispName = txtDispName.getText().toString();
-    	intentDispName.putExtra(EXTRA_MESSAGE, strDispName);
-    	startActivity(intentDispName);
-    }
+//    public void saveDispName(View view){
+//    	Intent intentDispName = new Intent(this, DisplayNameActivity.class);
+//    	EditText txtDispName = (EditText)findViewById(R.id.txtDispName);
+//    	String strDispName = txtDispName.getText().toString();
+//    	intentDispName.putExtra(EXTRA_MESSAGE, strDispName);
+//    	startActivity(intentDispName);
+//    	
+//    }
     
 
     @Override
